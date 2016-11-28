@@ -29,9 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.enableLocalDatastore()
         
         let parseConfiguration = ParseClientConfiguration(block: { (ParseMutableClientConfiguration) -> Void in
-            ParseMutableClientConfiguration.applicationId = "myuberdemoidxinxin"
-            ParseMutableClientConfiguration.clientKey = "myuberdemomasterkeyxinxin"
-            ParseMutableClientConfiguration.server = "http://ec2-52-41-175-183.us-west-2.compute.amazonaws.com/parse"
+            ParseMutableClientConfiguration.applicationId = "yourAppId"
+            ParseMutableClientConfiguration.clientKey = "yourMasterKey"
+            ParseMutableClientConfiguration.server = "yourServerAddress"
         })
         
         Parse.initialize(with: parseConfiguration)
@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // PFFacebookUtils.initializeFacebook()
         // ****************************************************************************
 
-        // PFUser.enableAutomaticUser()
+        // PFUser.enableAutomaticUser() // common this to disable auto user;
 
         let defaultACL = PFACL();
 
